@@ -1,9 +1,9 @@
 -> Jak to odpalić
 - Wrzuć to do .\xampp\htdocs
 - Odpal xampp Apache oraz MySQL
-- w przeglądarce wpisz http://localhost/projekt/stronaLogowania.php
+- W przeglądarce wpisz http://localhost/projekt/stronaLogowania.php
 
-do strony przekieruje ci tylko jak wpiszesz tych użytkowników:
+Do strony przekieruje ci tylko jak wpiszesz tych użytkowników:
 
 Login: jakub haslo: 1231
 Login: piotr haslo: 1231
