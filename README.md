@@ -1,0 +1,4 @@
+-> Jak to odpalić
+- Wrzuć to do .\xampp\htdocs
+- Odpal xampp Apache oraz MySQL
+- w przeglądarce wpisz http://localhost/projekt/stronaLogowania.php
