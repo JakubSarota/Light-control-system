@@ -24,7 +24,7 @@
         </div>
         <div class="content">
             <div>
-                <button type="button" onclick="location.href='sterowanieOswietleniem.php'"><span></span>Sterowanie oświetleniem</button>
+                <button type="button" onclick="location.href='sterowanieOswietleniem.php'"><span></span>Sterowanie</button>
                 <button type="button"><span></span>Statystyki</button>
             </div>
         </div>
