@@ -33,13 +33,16 @@
             <div class="pomieszczenia">
                 <ul>
                     <a>Pokój gościnny</a>
-                    <li><input type="checkbox"></li>                    
+                    <li><a><br />Włączony od: 20 min</a></li>                    
+					<hr style="width: 20%; margin: auto;" /><br /><br />
 
                     <a>Jadalnia</a>
-                    <li><input type="checkbox"></li>
+                    <li><a><br />Włączony od: 30 min</a></li>
+                    <hr style="width: 20%; margin: auto;" /><br /><br />
 
                     <a>Salon</a>
-                    <li><input type="checkbox"></li>
+                    <li><a><br />Włączony od: 1 godz 13 min</a></li>
+                    <hr style="width: 20%; margin: auto;" /><br /><br />
                 </ul>
             </div>
         </div>
@@ -47,21 +50,3 @@
 
 </body>
 </html>
-
-<!-- 
-    
-    <script>
-
-        function myFunction() {
-
-            box = document.getElementById("demo");
-	            if (box.style.visibility == "visible") box.style.visibility="hidden";
-	             else box.style.visibility="visible";
-	      }
-  
-    </script>
-
-     <a>Pokój gościnny</a>
-         <li><input type="checkbox" onclick="myFunction()"><p id="demo">Działa</p></li>
-
--->

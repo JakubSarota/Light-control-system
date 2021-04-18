@@ -112,15 +112,19 @@
 
 #panel {
     width: 400px;
-    margin: 0 auto;
-    padding: 15px 0 0;
-    background: #fff;
-    border: 1px solid silver;
+    margin: 100px auto;
+    padding: 2%;
+    background: #00000045;
+    border: 1px solid #009688;
     font: 16px calibri;
-    letter-spacing: -1px;
     -webkit-box-shadow: 0 0 2px silver;
     -moz-box-shadow: 0 0 2px silver;
     box-shadow: 0 0 2px silver;
+}
+
+.pole {
+    background: transparent;
+    border-radius: 25px;
 }
 
 form {
@@ -131,20 +135,20 @@ label {
     display: block;
     width: 260px;
     padding: 10px 20px;
-    color: #696969;
-    font-size: 16px;
+    color: silver;
+    font-size: 18px;
     text-shadow: 0 0 1px silver;
 }
 
 input[type="submit"] {
-    width: 70px;
-    padding: 5px 13px;
-    border: 1px solid #005f85;
+    width: 100px;
+    padding: 8px 13px;
+    border: 1px solid #009688;
     color: white;
     text-shadow: 0 0 1px black;
-    background: #98c9dc;
+    background: #009688;
     position: relative;
-    left: 180px;
+    left: 40%;
 }
 
 
@@ -153,18 +157,18 @@ input[type="submit"] {
     width: 360px;
     margin: 0 auto;
     padding: 10px 5px;
-    border: 1px solid silver;
-    outline: 5px solid #ebebeb;
+    border: 3px solid #696969;    
     font-size: 22px;
+    color: #fff;
 }
 
 #username:focus, #password:focus {
-    outline: 5px solid #e5f2f8;
+    outline-style: none;
 }
 
 #lower {
-    background: #ecf2f5;
     width: 360px;
+    height: 60px;
     padding: 5px;
     margin-top: 20px;
 }
@@ -172,5 +176,14 @@ input[type="submit"] {
 #panel, input[type="submit"] {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    border-radius: 10px;
+    border-radius: 25px;
+    outline-style: none;
+}
+
+#blad {
+    text-align: center;
+    color: #ba2222;
+    font-size: 18px;
+    text-shadow: 0 0 1px;
+    margin: 10px 0 0 25px;
 }
