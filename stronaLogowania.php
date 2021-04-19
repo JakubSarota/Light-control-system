@@ -6,20 +6,14 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <!--<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Projekt</title>
     <link rel="stylesheet" href="StyleSheet1.css" />
 </head>
 <body>
 
 <div class="baner">
-<div class="navbar">
-    <ul>      
-        <li >
-            <a href="stronaGlowna.php">POWRÓT</a>
-        </li>
-     </ul>
-     </div>
+<div class="navbar"></div>
     <div id="panel">
         <!--Polaczenie do php zaloguj-->
         <form action="zaloguj.php" method="post">
@@ -38,7 +32,7 @@
                     echo $_SESSION['Blad'];
                 }
             ?>
-            </div
+            </div>
         </div>
         </form>
         

@@ -24,7 +24,7 @@
                 $rezul->free_result();
                 header('location: stronaGlowna.php');
             } else {
-                $_SESSION['Blad'] = '<a>Nieprawidlowy login</a>';
+                $_SESSION['Blad'] = '<a>Nieprawidlowy login lub haslo</a>';
                 header('location: stronaLogowania.php');
             }
         }
