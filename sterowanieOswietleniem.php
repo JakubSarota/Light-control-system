@@ -39,7 +39,7 @@
 					<input type="time" name="usr_time" />
 					Czas zakończenia:
 					<input type="time" name="usr_time2" />
-					<input type="submit" value="Wyślij" /><br /><br />
+					<input type="submit" value="Ustaw" /><br /><br />
     
 
                     <a>Jadalnia</a>
@@ -48,7 +48,7 @@
 					<input type="time" name="usr_time" />
 					Czas zakończenia:
 					<input type="time" name="usr_time2" />
-                    <input type="submit" value="Wyślij" /><br /><br />
+                    <input type="submit" value="Ustaw" /><br /><br />
 
                     <a>Salon</a>
                     <li><input type="checkbox"></li>
@@ -56,7 +56,7 @@
 					<input type="time" name="usr_time" />
 					Czas zakończenia:
 					<input type="time" name="usr_time2" />
-                    <input type="submit" value="Wyślij" /><br /><br />
+                    <input type="submit" value="Ustaw" /><br /><br />
                 </ul>
             </div>
         </div>
