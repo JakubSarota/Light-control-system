@@ -34,12 +34,28 @@
                 <ul>
                     <a>Pokój gościnny</a>
                     <li><input type="checkbox"></li>                    
+					Czas rozpoczęcia:
+					<input type="time" name="usr_time" />
+					Czas zakończenia:
+					<input type="time" name="usr_time2" />
+					<input type="submit" value="Wyślij" /><br /><br />
+    
 
                     <a>Jadalnia</a>
                     <li><input type="checkbox"></li>
+					Czas rozpoczęcia:
+					<input type="time" name="usr_time" />
+					Czas zakończenia:
+					<input type="time" name="usr_time2" />
+                    <input type="submit" value="Wyślij" /><br /><br />
 
                     <a>Salon</a>
                     <li><input type="checkbox"></li>
+					Czas rozpoczęcia:
+					<input type="time" name="usr_time" />
+					Czas zakończenia:
+					<input type="time" name="usr_time2" />
+                    <input type="submit" value="Wyślij" /><br /><br />
                 </ul>
             </div>
         </div>
@@ -48,20 +64,5 @@
 </body>
 </html>
 
-<!-- 
-    
-    <script>
 
-        function myFunction() {
 
-            box = document.getElementById("demo");
-	            if (box.style.visibility == "visible") box.style.visibility="hidden";
-	             else box.style.visibility="visible";
-	      }
-  
-    </script>
-
-     <a>Pokój gościnny</a>
-         <li><input type="checkbox" onclick="myFunction()"><p id="demo">Działa</p></li>
-
--->
