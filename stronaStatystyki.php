@@ -6,6 +6,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
     <title>Projekt</title>
     <link rel="stylesheet" href="StyleSheet2.css" />
 
