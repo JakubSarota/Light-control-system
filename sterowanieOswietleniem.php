@@ -6,7 +6,6 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
     <title>Projekt</title>
     <link rel="stylesheet" href="StyleSheet2.css" />
 
@@ -49,3 +48,20 @@
 </body>
 </html>
 
+<!-- 
+    
+    <script>
+
+        function myFunction() {
+
+            box = document.getElementById("demo");
+	            if (box.style.visibility == "visible") box.style.visibility="hidden";
+	             else box.style.visibility="visible";
+	      }
+  
+    </script>
+
+     <a>Pokój gościnny</a>
+         <li><input type="checkbox" onclick="myFunction()"><p id="demo">Działa</p></li>
+
+-->
