@@ -3,6 +3,6 @@
 
     session_unset();
 
-    header("location: stronaLogowania.php")
+    header("location: index.php")
 ?>
 

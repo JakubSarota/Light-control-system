@@ -7,9 +7,10 @@
 <head>
     <meta charset="utf-8" />
     <title>Projekt</title>
-    <meta name="viewport" content="width=device-width, initial-scale=0.77" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.65" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
     <link rel="stylesheet" href="StyleSheet2.css" />
-
 </head>
 <body>
     <div class="baner">
@@ -33,15 +34,17 @@
         <div class="content">
             <div class="pomieszczenia">
                 <ul>
+                    <!--Pierwszy przycisk--->
                     <a>Pokój gościnny</a>
-                    <li><input type="checkbox"></li>                    
+                    <li><input onclick="switch1()" type="checkbox"></li>  
+                    
 					Czas rozpoczęcia:
 					<input type="time" name="usr_time" />
 					Czas zakończenia:
 					<input type="time" name="usr_time2" />
 					<input type="submit" value="Ustaw" /><br /><br />
-    
-
+                    
+                    <!--Drugi przycisk--->
                     <a>Jadalnia</a>
                     <li><input type="checkbox"></li>
 					Czas rozpoczęcia:
@@ -50,13 +53,19 @@
 					<input type="time" name="usr_time2" />
                     <input type="submit" value="Ustaw" /><br /><br />
 
-                    <a>Salon</a>
+
+                    <!--Trzeci przycisk--->
+                    <!-- <a>Salon</a>
                     <li><input type="checkbox"></li>
 					Czas rozpoczęcia:
 					<input type="time" name="usr_time" />
 					Czas zakończenia:
 					<input type="time" name="usr_time2" />
-                    <input type="submit" value="Ustaw" /><br /><br />
+                    <input type="submit" value="Ustaw" /><br /><br /> -->
+		<!--
+		<li><button type="button" id="clickOn">on</button></li>
+		<li><button type="button" id="clickOff">off</button></li>
+		-->
                 </ul>
             </div>
         </div>
