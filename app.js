@@ -1,65 +1,44 @@
 var toggled1 = false;
+var toggled2 = false;
 function switch1() {
     if(!toggled1) {
         toggled1 = true;
-		var a = new XMLHttpRequest();
-		a.open("GET", "on.php");
-		a.onreadystatechange=function() {
-			if(a.readyState==4) {
-				if(a.status==200) {
-				} else
-				{ console.log("blad"); }			
-			}	
-		}
-		a.send();
-		return;
+        var xhr = new XMLHttpRequest();
+        var url = "1on.php";
+        xhr.open("POST", url, true);
+        xhr.send();
+        return;
 	}
-	
 
     if(toggled1) {
         toggled1 = false;
-        	var a = new XMLHttpRequest();
-		a.open("GET", "off.php");
-		a.onreadystatechange=function() {
-			if(a.readyState==4) {
-				if(a.status==200) {
-				} else
-				{ console.log("blad"); }			
-			}	
-		}
-		a.send();
- 		return;	
+        var xhr = new XMLHttpRequest();
+        var url = "1off.php";
+        xhr.open("POST", url, true);
+        xhr.send();
+
+ 	return;
 	}
 }
 
-/*
-$(document).ready(function() {
-	
-	$('#clickOn').click(function() {
-		var a = new XMLHttpRequest();
-		a.open("GET", "on.php");
-		a.onreadystatechange=function() {
-			if(a.readyState==4) {
-				if(a.status==200) {
-				} else
-				{ console.log("blad"); }			
-			}		
-		}
-		a.send();
-	});
+function switch2() {
+    if(!toggled2) {
+        toggled2 = true;
+        var xhr = new XMLHttpRequest();
+        var url = "2on.php";
+        xhr.open("POST", url, true);
+        xhr.send();
+		
+        return;
+	}
 
+    if(toggled2) {
+        toggled2 = false;
+        var xhr = new XMLHttpRequest();
+        var url = "2off.php";
+        xhr.open("POST", url, true);
+        xhr.send();
 
-	$('#clickOff').click(function() {
-		var a = new XMLHttpRequest();
-		a.open("GET", "off.php");
-		a.onreadystatechange=function() {
-			if(a.readyState==4) {
-				if(a.status==200) {
-				} else
-				{ console.log("blad"); }			
-			}		
-		}
-		a.send();
-	});
-});
-*/
+ 	return;
+	}
+}

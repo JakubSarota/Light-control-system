@@ -1,5 +1,10 @@
 <?php
     session_start();
+
+	$wynik = mysqli_query($link, "SELECT id, Stan FROM oswietlenie1 ORDER BY id DESC LIMIT 0, 1");
+	while($row = mysqli_fetch_array($wynik)) {
+		$zmienna1 =$row['Stan'];
+	}
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +16,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="StyleSheet2.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:600|Teko:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
 </head>
 <body>
     <div class="baner">
@@ -34,38 +41,23 @@
         <div class="content">
             <div class="pomieszczenia">
                 <ul>
-                    <!--Pierwszy przycisk--->
-                    <a>Pokój gościnny</a>
-                    <li><input onclick="switch1()" type="checkbox"></li>  
-                    
-					Czas rozpoczęcia:
-					<input type="time" name="usr_time" />
-					Czas zakończenia:
-					<input type="time" name="usr_time2" />
-					<input type="submit" value="Ustaw" /><br /><br />
-                    
-                    <!--Drugi przycisk--->
-                    <a>Jadalnia</a>
-                    <li><input type="checkbox"></li>
-					Czas rozpoczęcia:
-					<input type="time" name="usr_time" />
-					Czas zakończenia:
-					<input type="time" name="usr_time2" />
-                    <input type="submit" value="Ustaw" /><br /><br />
+                    <form method="GET">
+                        <!--Pierwszy przycisk--->
+                        <a>Pokój gościnny</a>
+                        <li><input onclick="switch1()" type="checkbox"></li>
+			<!--czujnik przycisk
+				<div class="row">
+                		<div class="col">
+                    			<button type="button" class="btn btn-block btn-dark" id="btnToggle">Turn On</button>
+                		</div>
+            			</div>
+			--->
+                        <br/>
+                        <!--Drugi przycisk--->
+                        <a>Jadalnia</a>
+                        <li><input onclick="switch2()" type="checkbox"></li>
 
-
-                    <!--Trzeci przycisk--->
-                    <!-- <a>Salon</a>
-                    <li><input type="checkbox"></li>
-					Czas rozpoczęcia:
-					<input type="time" name="usr_time" />
-					Czas zakończenia:
-					<input type="time" name="usr_time2" />
-                    <input type="submit" value="Ustaw" /><br /><br /> -->
-		<!--
-		<li><button type="button" id="clickOn">on</button></li>
-		<li><button type="button" id="clickOff">off</button></li>
-		-->
+			</form>
                 </ul>
             </div>
         </div>
