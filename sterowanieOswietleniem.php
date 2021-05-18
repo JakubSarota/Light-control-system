@@ -1,10 +1,5 @@
 <?php
     session_start();
-
-	$wynik = mysqli_query($link, "SELECT id, Stan FROM oswietlenie1 ORDER BY id DESC LIMIT 0, 1");
-	while($row = mysqli_fetch_array($wynik)) {
-		$zmienna1 =$row['Stan'];
-	}
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +9,6 @@
     <title>Projekt</title>
     <meta name="viewport" content="width=device-width, initial-scale=0.65" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="app.js"></script>
     <link rel="stylesheet" href="StyleSheet2.css" />
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:600|Teko:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
@@ -62,7 +56,57 @@
             </div>
         </div>
     </div>
+<script>
+var toggled1 = false;
+var toggled2 = false;
+function switch1() {
+    if(!toggled1) {
+	console.log("Wlaczono przycisk pierwszy");
+        toggled1 = true;
+        var xhr = new XMLHttpRequest();
+        var url = "1on.php";
+        xhr.open("POST", url, true);
+        xhr.send();
+        return;
+	}
 
+    if(toggled1) {
+	console.log("Wylaczono przycisk pierwszy");
+        toggled1 = false;
+        var xhr = new XMLHttpRequest();
+        var url = "1off.php";
+        xhr.open("POST", url, true);
+        xhr.send();
+
+ 	return;
+	}
+}
+
+function switch2() {
+    if(!toggled2) {
+	console.log("Wlaczono przycisk drugi");
+        toggled2 = true;
+        var xhr = new XMLHttpRequest();
+        var url = "2on.php";
+        xhr.open("POST", url, true);
+        xhr.send();
+		
+        return;
+	}
+
+    if(toggled2) {
+	console.log("Wylaczono przycisk drugi");
+        toggled2 = false;
+        var xhr = new XMLHttpRequest();
+        var url = "2off.php";
+        xhr.open("POST", url, true);
+        xhr.send();
+
+ 	return;
+	}
+}
+
+</script>
 </body>
 </html>
 

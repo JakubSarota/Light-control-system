@@ -30,24 +30,72 @@
                 
             </ul>
         </div>
+
+
         <div class="content">
+
             <div class="pomieszczenia">
                 <ul>
                     <a>Pokój gościnny</a>
-                    <li><a><br />Włączony od: 20 min</a></li>                    
-					<hr style="width: 20%; margin: auto;" /><br /><br />
+                    <li>
+                    <div id="sh">Logi</div>
+                    <div id="ukryty_tekst">
+                         <?php
 
+                         $conn = mysqli_connect('localhost', 'admin', '123', 'projekt')
+                        or die('Brak po��czenia z serwerem MySQL.<br />B��d: '.mysql_error());
+                        echo "";
+
+                         $wlaczono = $conn->query("SELECT czas FROM statystyki ORDER BY id DESC LIMIT 5;");
+
+                        if($wlaczono->num_rows>0){
+
+                        while($wynik=$wlaczono->fetch_assoc()){
+                            echo "Wlaczono o godzinie: ". $wynik["czas"]."<br>";
+                        }
+                    }
+                ?>
+            </div>            
+            </li><br><br>
+            
                     <a>Jadalnia</a>
-                    <li><a><br />Włączony od: 30 min</a></li>
-                    <hr style="width: 20%; margin: auto;" /><br /><br />
+                    <li>
+                    <div id="sh">Logi</div>
+                   </li><br>
+
 
                     <a>Salon</a>
-                    <li><a><br />Włączony od: 1 godz 13 min</a></li>
-                    <hr style="width: 20%; margin: auto;" /><br /><br />
+                    <li>                     
+                    <div id="sh">Logi</div>
+                </li>                   
                 </ul>
             </div>
         </div>
     </div>
 
+    <script>
+
+var div = document.getElementById('ukryty_tekst');
+
+div.style.display = 'none';
+document.getElementById('sh').innerHTML = 'Logi';
+
+document.getElementById('sh').onclick = function()
+{
+    if(div.style.display == 'none')
+    {
+        div.style.display = 'block';
+        this.innerHTML = 'Logi';
+    }
+    else
+    {
+        div.style.display = 'none';
+        this.innerHTML = 'Logi';
+    }
+};
+
+</script>
+
 </body>
 </html>
+
