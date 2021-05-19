@@ -43,7 +43,7 @@
                          <?php
 
                          $conn = mysqli_connect('localhost', 'admin', '123', 'projekt')
-                        or die('Brak po³¹czenia z serwerem MySQL.<br />B³¹d: '.mysql_error());
+                        or die('Brak poï¿½ï¿½czenia z serwerem MySQL.<br />Bï¿½ï¿½d: '.mysql_error());
                         echo "";
 
                          $wlaczono = $conn->query("SELECT czas FROM statystyki ORDER BY id DESC LIMIT 5;");
@@ -98,4 +98,3 @@ document.getElementById('sh').onclick = function()
 
 </body>
 </html>
-

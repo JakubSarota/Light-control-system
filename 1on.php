@@ -3,14 +3,14 @@
     	echo "Wyjscie: " . shell_exec("sudo python /var/www/html/led/1on.py");
 
 	$conn = mysqli_connect('localhost', 'admin', '123', 'projekt')
-	or die('Brak po³¹czenia z serwerem MySQL.<br />B³¹d: '.mysql_error());
-	echo "Uda³o siê po³¹czyæ z serwerem!<br />";
+	or die('Brak poï¿½ï¿½czenia z serwerem MySQL.<br />Bï¿½ï¿½d: '.mysql_error());
+	echo "Udaï¿½o siï¿½ poï¿½ï¿½czyï¿½ z serwerem!<br />";
 
 	$date_clicked = date('Y-m-d H:i:s');
 
 	$sql=$conn->query("INSERT INTO statystyki (czas)
 	VALUES
-	('$date_clicked')");  
+	('$date_clicked')");   
 
     	$wynik = mysqli_query($conn, $sql);
 ?>
