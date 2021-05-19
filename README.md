@@ -1,3 +1,5 @@
+Układ sterowania oświetleniem (oświetlenie uruchamiane na podstawie informacji z czujnika ruchu oraz z poziomu smartphona)
+
 Nazwa bazy:
 
 - projekt
