@@ -1,10 +1,11 @@
--> Jak to odpalić
-- Wrzuć to do .\xampp\htdocs
-- Odpal xampp Apache oraz MySQL'
-- Dodaj do localhost/phpmyadmin baze o nazwie "projekt", wejdź do tej bazy kliknij import i dołącz uzytkownicy.sql
-- W przeglądarce wpisz http://localhost/projekt/stronaLogowania.php
+Nazwa bazy:
 
-Do strony przekieruje ci tylko jak wpiszesz tych użytkowników:
+- projekt
 
-- Login: jakub haslo: 1231
-- Login: piotr haslo: 1231
+Użytkownicy:
+
+- Login: jakub 
+  haslo: 1231
+  
+- Login: piotr 
+  haslo: 1231
